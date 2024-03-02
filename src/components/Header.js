@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import logo from '../assets/Logo.jpg'
 
 export const Header = () => {
   const inActive =
@@ -42,9 +43,9 @@ export const Header = () => {
             className='flex items-center space-x-3 rtl:space-x-reverse'
           >
             <img
-              src='https://flowbite.com/docs/images/logo.svg'
-              className='h-8'
-              alt='Flowbite Logo'
+              src={logo}
+              className='h-12 w-12 rounded-full'
+              alt='Logo'
             />
             <span className='self-center text-2xl font-semibold whitespace-nowrap dark:text-white'>
               CinemaXXI
